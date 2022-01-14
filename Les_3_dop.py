@@ -20,28 +20,6 @@ driver.find_element_by_xpath("//a[contains(text(), 'Shop')]").click()
 
 
 
-# Проверка количества товаров в категории
-# открыть категорию HTML
-#driver.find_element_by_xpath("//a[contains(text(), 'HTML')]").click()
-# проверка, что отображается три товара
-#items_count = driver.find_elements_by_class_name("woocommerce-LoopProduct-link")
-#assert len(items_count) == 3
-
-
-
-# Сортировка товаров
-# проверка, что в селекторе выбран вариант сортировки по умолчанию
-#sort = Select(driver.find_element_by_css_selector("select.orderby"))
-#sort_text = sort.first_selected_option.text
-#assert sort_text == "Default sorting"
-# выбор сортировки: по цене, от большей к меньшей
-#sort.select_by_value("price-desc")
-#sort = Select(driver.find_element_by_css_selector("select.orderby"))
-# проверка, что в селекторе выбрана сортировка по цене от большей к меньшей
-#sort_value = sort.first_selected_option.get_attribute("value")
-#assert sort_value == "price-desc"
-
-
 
 # Отображение, скидка товара
 # открыть книгу Android Quick Start Guide
